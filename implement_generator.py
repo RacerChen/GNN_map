@@ -68,6 +68,6 @@ def use_trained_model_of_given_img(h5_model_name, image_name):
 
 
 if __name__ == '__main__':
-    model_path = '/home/jc/GNN_map_proj/pix2pix_model_076720.h5'
+    model_path = '/home/jc/GNN_map_proj/pix2pix_model_109600.h5'
     # use_trained_model_of_dataset(model_path, 1)
     use_trained_model_of_given_img(model_path, '/home/jc/GNN_map_proj/tongji_jd.png')

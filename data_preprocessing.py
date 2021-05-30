@@ -12,6 +12,7 @@ import keras
 # dataset path
 path = '/home/jc/GNN_map_proj/maps_dataset/train/'
 
+
 # load all images in a directory into memory
 def load_images(path, size=(256,512)):
 	src_list, tar_list = list(), list()
