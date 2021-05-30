@@ -1,5 +1,4 @@
 # example of pix2pix gan for satellite to map image-to-image translation
-
 import tensorflow as tf
 import tensorflow.keras as keras
 import numpy as np
@@ -21,10 +20,6 @@ from tensorflow.keras.layers import Dropout
 from tensorflow.keras.layers import BatchNormalization
 from tensorflow.keras.layers import LeakyReLU
 from matplotlib import pyplot
-
-# Only use CPU
-import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
 
 
 # define the discriminator model

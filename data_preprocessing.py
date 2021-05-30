@@ -8,6 +8,9 @@ from keras.preprocessing.image import load_img
 from numpy import savez_compressed
 import keras
 
+# dataset:　http://efrosgans.eecs.berkeley.edu/pix2pix/datasets/maps.tar.gz
+# dataset path
+path = '/home/jc/GNN_map_proj/maps_dataset/train/'
 
 # load all images in a directory into memory
 def load_images(path, size=(256,512)):
@@ -28,8 +31,6 @@ def load_images(path, size=(256,512)):
 
 # 为了让图片在训练的时候加载的快一点，我们把下载的所有的图片都用Numpy保存在maps_256.npz.
 def compress_dataset_into():
-	# dataset path
-	path = '/home/jc/GNN_map_proj/maps_dataset/train/'
 	# load dataset
 	[src_images, tar_images] = load_images(path)
 	print('Loaded: ', src_images.shape, tar_images.shape)
